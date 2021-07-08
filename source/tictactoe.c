@@ -86,7 +86,9 @@ int end()
 void main()
 {
     int k;
+    char ch;
 
+    labell:
     system("clear");
     gameName();
     show();
@@ -108,6 +110,25 @@ void main()
         printf("\nPlayer 2 won:");
     else
         goto label;
+
+    printf("\nDo you want play continue: enter 'y' for YES and 'n' for NO.");
+    scanf(" %c", &ch);
+
+    if (ch == 'y' || ch == 'Y')
+    {
+        a[0] = '1';
+        a[1] = '2';
+        a[2] = '3';
+        a[3] = '4';
+        a[4] = '5';
+        a[5] = '6';
+        a[6] = '7';
+        a[7] = '8';
+        a[8] = '9';
+
+        goto labell;
+    }
+
 
     getchar();
 }
