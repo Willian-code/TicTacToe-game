@@ -28,7 +28,7 @@ void inputSymbol()
 void start()
 {
     char par;
-    printf("\nEnter who will start the game: player 1 or player 2\n");
+    printf("\nEnter who will start the game, player 1 or player 2: ");
     scanf("%c",&par);
 }
 
@@ -105,13 +105,13 @@ void main()
     show();
 
     if (k == 100)
-        printf("\nPlayer 1 won:");
+        printf("\nPlayer 1 won!");
     else if (k == 200)
-        printf("\nPlayer 2 won:");
+        printf("\nPlayer 2 won!");
     else
         goto label;
 
-    printf("\nDo you want play continue: enter 'y' for YES and 'n' for NO.");
+    printf("\nDo you want to keep playing?\nType 'y' for YES and 'n' for NO: ");
     scanf(" %c", &ch);
 
     if (ch == 'y' || ch == 'Y')
